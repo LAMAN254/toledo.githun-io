@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academia de Finanzas para Jóvenes: Aprende a gestionar tus finanzas personales con nuestros cursos interactivos.">
+    <meta name="keywords" content="finanzas, jóvenes, educación financiera, ahorro, inversión">
+    <title>Finazcall - Academia de Finanzas para Jóvenes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css"> <!-- External stylesheet for better performance -->
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Header Styles */
+        .main-header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .gradient-text {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header-subtitle {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .header-decoration i {
+            font-size: 1.5em;
+            margin: 0 10px;
+        }
+
+        /* Project Section Styles */
+        .project-section {
+            background-color: #e0f7fa;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .project-section h1 {
+            font-size: 2em;
+            color: #00796b;
+            margin-bottom: 10px;
+        }
+
+        .project-section p {
+            font-size: 1.2em;
+            color: #004d40;
+            margin: 5px 0;
+        }
+
+        /* Level Section Styles */
+        .levels-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .level {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .level h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .level ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+        }
+
+        .level ul li {
+            margin-bottom: 8px;
+        }
+
+        .level-bg-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('../images/pattern.png') repeat;
+            opacity: 0.1;
+            z-index: 0;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        .level-button {
+            display: inline-block;
+            background-color: #2575fc;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        .level-button:hover {
+            background-color: #1a5bb8;
+        }
+
+        .button-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .button-content i {
+            margin-right: 8px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        footer a {
+            color: #fff;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #2575fc;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .gradient-text {
+                font-size: 2em;
+            }
+
+            .header-subtitle {
+                font-size: 1em;
+            }
+
+            .level h2 {
+                font-size: 1.2em;
+            }
+        }
+
+        .sdg-section {
+            background-color: #f0f4c3;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .sdg-section h2 {
+            font-size: 1.8em;
+            color: #33691e;
+            margin-bottom: 10px;
+        }
+
+        .sdg-section p {
+            font-size: 1.2em;
+            color: #558b2f;
+            margin: 5px 0;
+        }
+
+        .sdg-icons {
+            margin: 20px 0;
+        }
+
+        .sdg-icons i {
+            font-size: 2em;
+            margin: 0 10px;
+            color: #33691e;
+        }
+    </style>
+</head>
+<body>
+    <section class="project-section">
+        <h1>Proyecto: Finazcall</h1>
+        <p><strong>Slogan del equipo:</strong> La excelencia matovellana a otro nivel.</p>
+        <p><strong>Miembros del equipo:</strong> Gualichico Guano Jorge Adrian, Chachalo Molina Tifany Yvette, Estrella Oña Juseth Adrian</p>
+        <p><strong><u>Aprende a gestionar tu dinero de forma inteligente </u></strong></p>
+    </section>
+    <section class="sdg-section">
+        <h2>Contribución al ODS 4: Educación de Calidad</h2>
+        <p>El proyecto "Finazcall" se alinea con el Objetivo de Desarrollo Sostenible 4 al proporcionar educación financiera de calidad a los jóvenes. A través de recursos educativos y herramientas interactivas, promovemos la alfabetización financiera, empoderando a los individuos para tomar decisiones informadas y mejorar su bienestar económico.</p>
+        <p>La educación financiera es un componente esencial de la educación de calidad, ya que permite a los jóvenes desarrollar habilidades críticas para la vida y el trabajo, contribuyendo a su desarrollo personal y profesional.</p>
+        <div class="sdg-icons">
+            <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+            <i class="fas fa-book-reader" aria-hidden="true"></i>
+            <i class="fas fa-chalkboard-teacher" aria-hidden="true"></i>
+        </div>
+        <p>Únete a nosotros en este viaje educativo y descubre cómo puedes mejorar tus habilidades financieras para un futuro más brillante.</p>
+    </section>
+
+    <main class="container">
+        <div class="levels-grid">
+            <section id="level1" class="level" data-level="1" data-progress="75">
+                <div class="level-bg-pattern" aria-hidden="true"></div>
+                <h2>Nivel 1: Introducción</h2>
+                <ul>
+                    <li>La regla 50-30-20 para tu presupuesto</li>
+                    <li>Primeros pasos en el ahorro</li>
+                    <li>Apps y herramientas financieras</li>
+                </ul>
+                <div class="button-container">
+                    <a href="levels/level1.html" class="level-button" aria-label="Ir al Nivel 1">
+                        <span class="button-content">
+                            <i class="fas fa-book-open" aria-hidden="true"></i>
+                            Ir al Nivel 1
+                        </span>
+                    </a>
+                </div>
+            </section>
+
+            <section id="level2" class="level">
+                <h2>Nivel 2: Presupuesto y Control de Gastos</h2>
+                <ul>
+                    <li>Crear un presupuesto básico</li>
+                    <li>Identificar gastos innecesarios</li>
+                    <li>Herramientas para controlar tus finanzas</li>
+                </ul>
+                <div class="button-container">
+                    <a href="levels/level2.html" class="level-button" aria-label="Ir al Nivel 2">
+                        <span class="button-content">
+                            <i class="fas fa-chart-pie" aria-hidden="true"></i>
+                            Ir al Nivel 2
+                        </span>
+                    </a>
+                </div>
+            </section>
+
+            <section id="level3" class="level">
+                <h2>Nivel 3: Ahorro e Inversiones</h2>
+                <ul>
+                    <li>Estrategias de ahorro avanzadas</li>
+                    <li>Introducción a las inversiones</li>
+                    <li>Herramientas digitales para invertir</li>
+                </ul>
+                <div class="button-container">
+                    <a href="levels/level3.html" class="level-button" aria-label="Ir al Nivel 3">
+                        <span class="button-content">
+                            <i class="fas fa-piggy-bank" aria-hidden="true"></i>
+                            Ir al Nivel 3
+                        </span>
+                    </a>
+                </div>
+            </section>
+
+            <section id="level4" class="level">
+                <h2>Nivel 4: Simuladores de finanzas</h2>
+                <ul aria-labelledby="nivel4-heading">
+                    <li>Simuladores de finanzas</li>
+                    <li>Simuladores de valores</li>
+                    <li>Simuladores de mercados</li>
+                    <li>Simuladores de riesgos</li>
+                    <li>Simuladores de estrategias</li>
+                    <li>Simuladores de inversiones</li>
+                    <li>Simuladores de ahorros</li>
+                </ul>
+                <div class="button-container">
+                    <a href="levels/level4.html" class="level-button" aria-label="Ir al Nivel 4">
+                        <span class="button-content">
+                            <i class="fas fa-calculator" aria-hidden="true"></i>
+                            Ir al Nivel 4
+                        </span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Contacto: <a href="mailto:joreguallich@gmail.com">joreguallich@gmail.com</a></p>
+        <div class="social-media">
+            <a href="#" title="Síguenos en Facebook" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+            <a href="#" title="Síguenos en Twitter" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a href="#" title="Síguenos en Instagram" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="scripts/main.js"></script> <!-- External JavaScript for better performance -->

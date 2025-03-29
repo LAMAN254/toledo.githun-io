@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendizaje Financiero</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+            <li><a href="conceptos-basicos.html"><i class="fas fa-book"></i> Conceptos Básicos</a></li>
+            <li><a href="herramientas.html"><i class="fas fa-tools"></i> Herramientas</a></li>
+            <li><a href="ejercicios.html"><i class="fas fa-tasks"></i> Ejercicios Prácticos</a></li>
+            <li><a href="recursos.html"><i class="fas fa-folder"></i> Recursos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <header class="hero">
+            <h1>Aprende Finanzas Personales</h1>
+            <p class="hero-text">Descubre cómo manejar tu dinero de manera inteligente y construir un futuro financiero sólido</p>
+        </header>
+        
+        <section class="intro">
+            <h2>Pilares del Aprendizaje Financiero</h2>
+            <div class="pilares-grid">
+                <div class="pilar">
+                    <i class="fas fa-calculator pilar-icon"></i>
+                    <h3>1. Presupuesto</h3>
+                    <p>Aprende a controlar tus ingresos y gastos</p>
+                    <a href="presupuesto.html" class="btn-learn">Aprende más</a>
+                </div>
+                <div class="pilar">
+                    <i class="fas fa-piggy-bank pilar-icon"></i>
+                    <h3>2. Ahorro</h3>
+                    <p>Desarrolla hábitos de ahorro efectivos</p>
+                    <a href="ahorro.html" class="btn-learn">Aprende más</a>
+                </div>
+                <div class="pilar">
+                    <i class="fas fa-chart-line pilar-icon"></i>
+                    <h3>3. Inversión</h3>
+                    <p>Conoce diferentes formas de hacer crecer tu dinero</p>
+                    <a href="inversion.html" class="btn-learn">Aprende más</a>
+                </div>
+                <div class="pilar">
+                    <i class="fas fa-hand-holding-usd pilar-icon"></i>
+                    <h3>4. Gestión de Deuda</h3>
+                    <p>Aprende a manejar y evitar deudas innecesarias</p>
+                    <a href="gestion-deuda.html" class="btn-learn">Aprende más</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="ruta-aprendizaje">
+            <h2>Ruta de Aprendizaje Recomendada</h2>
+            <div class="timeline">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <h3>Nivel 1: Fundamentos</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Conceptos básicos de dinero</li>
+                        <li><i class="fas fa-check-circle"></i> Creación de presupuestos</li>
+                        <li><i class="fas fa-check-circle"></i> Ahorro básico</li>
+                    </ul>
+                    <a href="ejercicios.html#nivel1" class="btn-start">Comenzar Nivel 1</a>
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <h3>Nivel 2: Gestión</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Control de gastos</li>
+                        <li><i class="fas fa-check-circle"></i> Metas financieras</li>
+                        <li><i class="fas fa-check-circle"></i> Ahorro avanzado</li>
+                    </ul>
+                    <a href="ejercicios.html#nivel2" class="btn-start">Comenzar Nivel 2</a>
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <h3>Nivel 3: Crecimiento</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Inversiones básicas</li>
+                        <li><i class="fas fa-check-circle"></i> Gestión de riesgos</li>
+                        <li><i class="fas fa-check-circle"></i> Planificación a largo plazo</li>
+                    </ul>
+                    <a href="ejercicios.html#nivel3" class="btn-start">Comenzar Nivel 3</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="recursos-adicionales">
+            <h2>Recursos Adicionales</h2>
+            <div class="recursos-grid">
+                <div class="recurso">
+                    <i class="fas fa-video"></i>
+                    <h3>Videotutoriales</h3>
+                    <p>Aprende con nuestros videos explicativos</p>
+                </div>
+                <div class="recurso">
+                    <i class="fas fa-file-pdf"></i>
+                    <h3>Guías PDF</h3>
+                    <p>Descarga material de estudio</p>
+                </div>
+                <div class="recurso">
+                    <i class="fas fa-users"></i>
+                    <h3>Comunidad</h3>
+                    <p>Únete a nuestro foro de discusión</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="calculadora-presupuesto">
+            <h2>Calculadora de Presupuesto</h2>
+            <form id="presupuesto-form">
+                <div class="input-group">
+                    <label for="ingresos">Ingresos Mensuales:</label>
+                    <input type="number" id="ingresos" placeholder="Ingresa tus ingresos mensuales">
+                </div>
+                <div class="input-group">
+                    <label for="gastos">Gastos Mensuales:</label>
+                    <input type="number" id="gastos" placeholder="Ingresa tus gastos mensuales">
+                </div>
+                <button type="submit" class="btn-calcular">Calcular</button>
+            </form>
+            <div id="resultado-presupuesto"></div>
+        </section>
+
+        <section class="testimonios">
+            <h2>Testimonios</h2>
+            <div class="testimonios-grid">
+                <div class="testimonio">
+                    <p>"Este curso me ha ayudado a entender mejor cómo manejar mis finanzas. ¡Muy recomendable!"</p>
+                    <h4>- Juan Pérez</h4>
+                </div>
+                <div class="testimonio">
+                    <p>"Gracias a estos recursos, he podido ahorrar más y planificar mejor mi futuro financiero."</p>
+                    <h4>- María López</h4>
+                </div>
+                <div class="testimonio">
+                    <p>"La información es clara y fácil de seguir. He aprendido mucho sobre inversiones."</p>
+                    <h4>- Carlos García</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="conceptos-basicos.html">Conceptos Básicos</a></li>
+                    <li><a href="herramientas.html">Herramientas</a></li>
+                    <li><a href="ejercicios.html">Ejercicios</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-envelope"></i> correo@ejemplo.com</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces Útiles</h4>
+                <ul>
+                    <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                    <li><a href="terminos-condiciones.html">Términos y Condiciones</a></li>
+                    <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Aprendizaje Financiero. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

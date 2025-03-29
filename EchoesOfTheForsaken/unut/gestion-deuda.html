@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Deuda | Aprendizaje Financiero</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pilares.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="conceptos-basicos.html"><i class="fas fa-book"></i> Conceptos Básicos</a></li>
+                <li><a href="herramientas.html"><i class="fas fa-tools"></i> Herramientas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pilar-content">
+        <h1><i class="fas fa-hand-holding-usd"></i> Gestión de Deuda</h1>
+        
+        <section class="teoria">
+            <h2>¿Qué es la gestión de deuda?</h2>
+            <p>La gestión de deuda implica tomar decisiones informadas para manejar y reducir tus deudas de manera efectiva. Esto incluye entender los diferentes tipos de deuda, cómo afectan tus finanzas y las estrategias para pagarlas.</p>
+            
+            <div class="concepto-clave">
+                <h3>Tipos de deuda:</h3>
+                <ul>
+                    <li><i class="fas fa-credit-card"></i> <strong>Deuda de tarjeta de crédito:</strong> Dinero que debes por compras con tarjeta. Suele tener tasas de interés altas.</li>
+                    <li><i class="fas fa-university"></i> <strong>Deuda estudiantil:</strong> Préstamos para pagar estudios. Generalmente tienen tasas de interés más bajas y opciones de pago flexibles.</li>
+                    <li><i class="fas fa-car"></i> <strong>Deuda de auto:</strong> Préstamos para comprar un vehículo. Las tasas de interés pueden variar.</li>
+                    <li><i class="fas fa-home"></i> <strong>Hipoteca:</strong> Préstamos para comprar una casa. Suelen tener tasas de interés más bajas y plazos largos.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="estrategias">
+            <h2>Estrategias para Manejar la Deuda</h2>
+            <div class="estrategia">
+                <h3><i class="fas fa-chart-line"></i> Método de la Bola de Nieve</h3>
+                <p>Este método consiste en pagar primero las deudas más pequeñas mientras se hacen pagos mínimos en las deudas más grandes. Una vez pagada la deuda más pequeña, se pasa a la siguiente más pequeña, y así sucesivamente. Esto te da una sensación de logro y te motiva a seguir pagando.</p>
+                <p><strong>Ejemplo:</strong> Si tienes tres deudas de $500, $1,000 y $2,000, pagarías primero la de $500. Una vez pagada, usarías el dinero que destinabas a esa deuda para la siguiente más pequeña.</p>
+            </div>
+            <div class="estrategia">
+                <h3><i class="fas fa-percentage"></i> Método de la Avalancha</h3>
+                <p>Este método se enfoca en pagar primero las deudas con la tasa de interés más alta, mientras se hacen pagos mínimos en las deudas con tasas más bajas. Esto ayuda a reducir el costo total de la deuda más rápidamente.</p>
+                <p><strong>Ejemplo:</strong> Si tienes deudas con tasas de interés del 20%, 15% y 10%, pagarías primero la deuda con el 20% de interés. Una vez pagada, usarías el dinero para la siguiente deuda con la tasa más alta.</p>
+            </div>
+        </section>
+
+        <section class="herramienta-practica">
+            <h2>Calculadora de Pago de Deuda</h2>
+            <div class="calculator">
+                <div class="input-group">
+                    <h3><i class="fas fa-money-bill-wave"></i> Deuda Total</h3>
+                    <input type="number" id="deuda-total" placeholder="Monto total de la deuda">
+                </div>
+                
+                <div class="input-group">
+                    <h3><i class="fas fa-percentage"></i> Tasa de Interés Anual (%)</h3>
+                    <input type="number" id="tasa-interes" placeholder="Tasa de interés anual">
+                </div>
+
+                <div class="input-group">
+                    <h3><i class="fas fa-calendar-alt"></i> Plazo (meses)</h3>
+                    <input type="number" id="plazo" placeholder="Número de meses para pagar">
+                </div>
+
+                <button onclick="calcularPagoDeuda()" class="btn-calcular">
+                    <i class="fas fa-calculator"></i> Calcular Pago Mensual
+                </button>
+                <div id="resultado-deuda"></div>
+            </div>
+        </section>
+
+        <section class="tips-deuda">
+            <h2><i class="fas fa-lightbulb"></i> Tips para Evitar Deudas Innecesarias</h2>
+            <div class="tips-grid">
+                <div class="tip">
+                    <i class="fas fa-credit-card"></i>
+                    <h3>Usa tarjetas de crédito con responsabilidad</h3>
+                    <p>Evita gastar más de lo que puedes pagar al final del mes. Paga el saldo completo cada mes para evitar intereses.</p>
+                </div>
+                <div class="tip">
+                    <i class="fas fa-piggy-bank"></i>
+                    <h3>Ahorra para emergencias</h3>
+                    <p>Tener un fondo de emergencia puede evitar que recurras a préstamos en situaciones imprevistas.</p>
+                </div>
+                <div class="tip">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>Compra con inteligencia</h3>
+                    <p>Haz una lista de compras y evita las compras impulsivas. Compara precios y busca ofertas.</p>
+                </div>
+                <div class="tip">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h3>Negocia tus deudas</h3>
+                    <p>Si tienes dificultades para pagar, contacta a tus acreedores para negociar mejores términos o un plan de pago.</p>
+                </div>
+                <div class="tip">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Prioriza tus deudas</h3>
+                    <p>Enfócate en pagar primero las deudas con tasas de interés más altas para reducir el costo total de la deuda.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="gestion-deuda.js"></script>
+</body>
+</html>

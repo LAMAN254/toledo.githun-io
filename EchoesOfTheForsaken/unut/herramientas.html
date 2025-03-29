@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramientas | Aprendizaje Financiero</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pilares.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="conceptos-basicos.html"><i class="fas fa-book"></i> Conceptos Básicos</a></li>
+                <li><a href="herramientas.html"><i class="fas fa-tools"></i> Herramientas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pilar-content">
+        <h1><i class="fas fa-tools"></i> Herramientas Financieras</h1>
+        
+        <section class="calculadora-presupuesto">
+            <h2>Calculadora de Presupuesto</h2>
+            <p>Esta herramienta te ayuda a planificar y controlar tus ingresos y gastos mensuales.</p>
+            <div class="calculator">
+                <div class="input-group">
+                    <h3><i class="fas fa-plus-circle"></i> Ingresos Mensuales</h3>
+                    <input type="number" id="ingresos" placeholder="Ingresos">
+                </div>
+                
+                <div class="input-group">
+                    <h3><i class="fas fa-minus-circle"></i> Gastos Mensuales</h3>
+                    <input type="number" id="gastos" placeholder="Gastos">
+                </div>
+
+                <button onclick="calcularPresupuesto()" class="btn-calcular">
+                    <i class="fas fa-calculator"></i> Calcular Presupuesto
+                </button>
+                <div id="resultado-presupuesto"></div>
+            </div>
+        </section>
+
+        <section class="calculadora-ahorro">
+            <h2>Calculadora de Ahorro</h2>
+            <p>Esta herramienta te ayuda a calcular cuánto puedes ahorrar cada mes y cuánto tendrás ahorrado en un periodo de tiempo.</p>
+            <div class="calculator">
+                <div class="input-group">
+                    <h3><i class="fas fa-piggy-bank"></i> Ahorro Mensual</h3>
+                    <input type="number" id="ahorro-mensual" placeholder="Ahorro mensual">
+                </div>
+                
+                <div class="input-group">
+                    <h3><i class="fas fa-calendar-alt"></i> Periodo (meses)</h3>
+                    <input type="number" id="periodo" placeholder="Número de meses">
+                </div>
+
+                <button onclick="calcularAhorro()" class="btn-calcular">
+                    <i class="fas fa-calculator"></i> Calcular Ahorro
+                </button>
+                <div id="resultado-ahorro"></div>
+            </div>
+        </section>
+
+        <section class="calculadora-inversion">
+            <h2>Calculadora de Inversión</h2>
+            <p>Esta herramienta te ayuda a calcular el crecimiento de tus inversiones a lo largo del tiempo.</p>
+            <div class="calculator">
+                <div class="input-group">
+                    <h3><i class="fas fa-chart-line"></i> Inversión Inicial</h3>
+                    <input type="number" id="inversion-inicial" placeholder="Inversión inicial">
+                </div>
+                
+                <div class="input-group">
+                    <h3><i class="fas fa-percentage"></i> Tasa de Interés Anual (%)</h3>
+                    <input type="number" id="tasa-interes" placeholder="Tasa de interés anual">
+                </div>
+
+                <div class="input-group">
+                    <h3><i class="fas fa-calendar-alt"></i> Periodo (años)</h3>
+                    <input type="number" id="periodo-inversion" placeholder="Número de años">
+                </div>
+
+                <button onclick="calcularInversion()" class="btn-calcular">
+                    <i class="fas fa-calculator"></i> Calcular Inversión
+                </button>
+                <div id="resultado-inversion"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="herramientas.js"></script>
+</body>
+</html>
