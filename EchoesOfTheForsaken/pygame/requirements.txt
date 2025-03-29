@@ -1,3 +1,0 @@
-tkcalendar==1.6.1
-matplotlib==3.7.1
-python-dotenv==1.0.0 
